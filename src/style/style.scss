@@ -45,17 +45,11 @@
 }
 
 .inputContainer {
-  width: 100%;
-  margin: auto;
-  text-align: center;
   > .input {
     color: black;
   }
 
   > .button {
-    margin: 0;
-    padding: 0;
-    width: 3%;
     border: 0;
     padding: 15px;
     background-color: #44415e;
@@ -65,9 +59,7 @@
     }
   }
   > .search {
-    margin: 0;
-    padding: 0;
-    width: 50%;
+    width: 90%;
     background-color: #44415e;
     border: 0;
     padding: 15px;
