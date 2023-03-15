@@ -1,68 +1,73 @@
+$background: #44415e;
+
+.options {
+  padding-left: 150px;
+  > i {
+    margin: 10px;
+  }
+}
+
 .App {
   text-align: center;
   width: 100%;
   margin: auto;
-}
 
-.list {
-  text-align: left;
-  .card {
-    background-color: rgb(255, 255, 255);
-    border-radius: 0;
-    border: 1;
-    .col-md-12 {
-      > .name {
-        font-size: x-large;
-        font-family: Arial, Helvetica, sans-serif;
-        padding-left: 126px;
-        margin: 10px;
+  .container {
+    .list {
+      text-align: left;
+      .card {
+        background-color: rgb(226, 7, 7);
+        border-radius: 0;
+        border: 1;
+        .col-md-12 {
+          > .name {
+            font-size: x-large;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-left: 126px;
+            margin: 10px;
+          }
+        }
+
+        .col-md-3 {
+          @extend .options;
+          > a {
+            text-decoration: none;
+            color: black;
+          }
+        }
+
+        .col-md-6 {
+          @extend .options;
+        }
       }
     }
 
-    .col-md-3 {
-      padding-left: 150px;
-      > a {
-        text-decoration: none;
+    ::placeholder {
+      color: rgb(247, 247, 247);
+      opacity: 1;
+    }
+
+    .inputContainer {
+      > .input {
         color: black;
       }
-      > i {
-        margin: 10px;
+
+      > .button {
+        border: 0;
+        padding: 15px;
+        background-color: $background;
+
+        > i {
+          color: antiquewhite;
+        }
+      }
+      > .search {
+        width: 500px;
+        background-color: $background;
+        border: 0;
+        padding: 15px;
+        color: aliceblue;
       }
     }
-
-    .col-md-6 {
-      > i {
-        margin: 10px;
-        padding-left: 150px;
-      }
-    }
-  }
-}
-
-::placeholder {
-  color: rgb(247, 247, 247);
-  opacity: 1;
-}
-
-.inputContainer {
-  > .input {
-    color: black;
-  }
-
-  > .button {
-    border: 0;
-    padding: 15px;
-    background-color: #44415e;
-
-    > i {
-      color: antiquewhite;
-    }
-  }
-  > .search {
-    width: 90%;
-    background-color: #44415e;
-    border: 0;
-    padding: 15px;
-    color: aliceblue;
   }
 }

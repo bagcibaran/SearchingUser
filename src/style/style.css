@@ -1,61 +1,54 @@
+.options, .App .container .list .card .col-md-6, .App .container .list .card .col-md-3 {
+  padding-left: 150px;
+}
+.options > i, .App .container .list .card .col-md-6 > i, .App .container .list .card .col-md-3 > i {
+  margin: 10px;
+}
+
 .App {
   text-align: center;
   width: 100%;
   margin: auto;
 }
-
-.list {
+.App .container .list {
   text-align: left;
 }
-.list .card {
-  background-color: rgb(255, 255, 255);
+.App .container .list .card {
+  background-color: rgb(226, 7, 7);
   border-radius: 0;
   border: 1;
 }
-.list .card .col-md-12 > .name {
+.App .container .list .card .col-md-12 > .name {
   font-size: x-large;
   font-family: Arial, Helvetica, sans-serif;
   padding-left: 126px;
   margin: 10px;
 }
-.list .card .col-md-3 {
-  padding-left: 150px;
-}
-.list .card .col-md-3 > a {
+.App .container .list .card .col-md-3 > a {
   text-decoration: none;
   color: black;
 }
-.list .card .col-md-3 > i {
-  margin: 10px;
-}
-.list .card .col-md-6 > i {
-  margin: 10px;
-  padding-left: 150px;
-}
-
-::-moz-placeholder {
+.App .container ::-moz-placeholder {
   color: rgb(247, 247, 247);
   opacity: 1;
 }
-
-::placeholder {
+.App .container ::placeholder {
   color: rgb(247, 247, 247);
   opacity: 1;
 }
-
-.inputContainer > .input {
+.App .container .inputContainer > .input {
   color: black;
 }
-.inputContainer > .button {
+.App .container .inputContainer > .button {
   border: 0;
   padding: 15px;
   background-color: #44415e;
 }
-.inputContainer > .button > i {
+.App .container .inputContainer > .button > i {
   color: antiquewhite;
 }
-.inputContainer > .search {
-  width: 90%;
+.App .container .inputContainer > .search {
+  width: 500px;
   background-color: #44415e;
   border: 0;
   padding: 15px;
