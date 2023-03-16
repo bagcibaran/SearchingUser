@@ -1,6 +1,7 @@
 import React from "react";
 
-const SearchResult = ({ data }) => {
+const SearchResult = (props) => {
+  const { data } = props;
   if (data.length === 0) {
     return <div className="not-found">No Result Found</div>;
   }
