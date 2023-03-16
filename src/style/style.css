@@ -1,56 +1,78 @@
-.options, .App .container .list .card .col-md-6, .App .container .list .card .col-md-3 {
-  padding-left: 150px;
-}
-.options > i, .App .container .list .card .col-md-6 > i, .App .container .list .card .col-md-3 > i {
-  margin: 10px;
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css");
+.options, .App .search-container .search-result-container .result-item .name {
+  font-size: 15px;
+  color: black;
 }
 
-.App {
-  text-align: center;
+.App .search-container {
+  max-width: 1000px;
+}
+.App .search-container .input-container {
+  background-color: #44415e;
+  padding: 10px 15px 20px 50px;
   width: 100%;
-  margin: auto;
+  position: relative;
 }
-.App .container .list {
-  text-align: left;
+.App .search-container .input-container .search-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 15px;
 }
-.App .container .list .card {
-  background-color: rgb(226, 7, 7);
+.App .search-container .input-container .search-icon i {
+  color: rgb(168, 148, 148);
+}
+.App .search-container .input-container .search-input {
+  color: #fff;
+  width: 80%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgb(168, 148, 148);
+}
+.App .search-container .input-container .search-input:focus-visible {
+  outline-offset: 0;
+  outline-style: none;
+}
+.App .search-container .input-container .search-input::-moz-placeholder {
+  color: rgb(168, 148, 148);
+}
+.App .search-container .input-container .search-input::placeholder {
+  color: rgb(168, 148, 148);
+}
+.App .search-container .search-result-container {
+  max-height: 80vh;
+  overflow-y: auto;
+}
+.App .search-container .search-result-container > div:nth-child(odd) {
+  background-color: #f8f6f8;
+}
+.App .search-container .search-result-container .result-item {
   border-radius: 0;
-  border: 1;
+  background-color: #e9e7e9;
+  padding: 30px;
+  color: #333;
 }
-.App .container .list .card .col-md-12 > .name {
-  font-size: x-large;
-  font-family: Arial, Helvetica, sans-serif;
-  padding-left: 126px;
-  margin: 10px;
+.App .search-container .search-result-container .result-item .name {
+  font-size: 28px;
 }
-.App .container .list .card .col-md-3 > a {
+.App .search-container .search-result-container .result-item .user-info {
+  display: flex;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+  margin: 15px 0;
+}
+.App .search-container .search-result-container .result-item .user-info .info-section {
+  white-space: nowrap;
+  flex-basis: 30%;
+}
+.App .search-container .search-result-container .result-item .user-info .info-section a {
   text-decoration: none;
-  color: black;
+  color: #000;
 }
-.App .container ::-moz-placeholder {
-  color: rgb(247, 247, 247);
-  opacity: 1;
+.App .search-container .search-result-container .result-item .user-info .info-section.policy {
+  flex-basis: 40%;
 }
-.App .container ::placeholder {
-  color: rgb(247, 247, 247);
-  opacity: 1;
-}
-.App .container .inputContainer > .input {
-  color: black;
-}
-.App .container .inputContainer > .button {
-  border: 0;
-  padding: 15px;
-  background-color: #44415e;
-}
-.App .container .inputContainer > .button > i {
-  color: antiquewhite;
-}
-.App .container .inputContainer > .search {
-  width: 500px;
-  background-color: #44415e;
-  border: 0;
-  padding: 15px;
-  color: aliceblue;
+.App .search-container .search-result-container .not-found {
+  text-align: center;
+  font-size: 250%;
 }/*# sourceMappingURL=style.css.map */
